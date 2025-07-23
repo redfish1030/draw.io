@@ -4,6 +4,18 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-1" value="llm.py-&amp;gt;__init__()&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-3" target="sT55y12rGX_XL4kx0Qpv-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-3" value="VLLM的入口在 vllm/entrypoints下面" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="165" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-6" value="test_vllm.py -&amp;gt; main()&lt;div&gt;&amp;nbsp; llm=LLM(model=model_path,)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="60" width="200" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
