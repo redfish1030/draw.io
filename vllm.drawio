@@ -7,8 +7,11 @@
         <mxCell id="sT55y12rGX_XL4kx0Qpv-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-1" target="sT55y12rGX_XL4kx0Qpv-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sT55y12rGX_XL4kx0Qpv-1" value="llm.py-&amp;gt;__init__()&lt;br&gt;&lt;div&gt;&lt;div&gt;self.llm_engine = LLMEngine.from_engine_args(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; engine_args=engine_args, usage_context=UsageContext.LLM_CLASS)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="240" y="120" width="280" height="80" as="geometry" />
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-1" target="sT55y12rGX_XL4kx0Qpv-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-1" value="llm.py-&gt;__init__()&#xa;# Create the Engine (autoselects V0 vs V1)&#xa;self.llm_engine = LLMEngine.from_engine_args(&#xa;            engine_args=engine_args, usage_context=UsageContext.LLM_CLASS)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="320" height="80" as="geometry" />
         </mxCell>
         <mxCell id="sT55y12rGX_XL4kx0Qpv-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-3" target="sT55y12rGX_XL4kx0Qpv-1">
           <mxGeometry relative="1" as="geometry" />
@@ -20,16 +23,43 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sT55y12rGX_XL4kx0Qpv-6" value="test_vllm.py -&amp;gt; main()&lt;div&gt;&amp;nbsp; llm=LLM(model=model_path,)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="240" y="40" width="280" height="40" as="geometry" />
+          <mxGeometry x="240" y="40" width="320" height="40" as="geometry" />
         </mxCell>
         <mxCell id="sT55y12rGX_XL4kx0Qpv-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-8" target="sT55y12rGX_XL4kx0Qpv-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sT55y12rGX_XL4kx0Qpv-8" value="llm_engine.py-&amp;gt;from_engine_args()&lt;br&gt;&amp;nbsp; &amp;nbsp; return engine_cls.from_vllm_config()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="240" y="240" width="280" height="40" as="geometry" />
+          <mxGeometry x="240" y="230" width="320" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sT55y12rGX_XL4kx0Qpv-10" value="llm_engine.py-&amp;gt;__init__()&lt;br&gt;&amp;nbsp; &amp;nbsp; return cls()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="240" y="320" width="280" height="40" as="geometry" />
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-10" target="sT55y12rGX_XL4kx0Qpv-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-10" value="llm_engine.py-&amp;gt;from_vllm_config()&lt;br&gt;&amp;nbsp; &amp;nbsp; return cls(&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;executor_class=cls._get_executor_cls(vllm_config),&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="300" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-12" target="sT55y12rGX_XL4kx0Qpv-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-12" value="llm_engine.py-&amp;gt;__init__()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.tokenizer = self._init_tokenizer()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.detokenizer = Detokenizer(self.tokenizer)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.input_preprocessor = InputPreprocessor(self.model_config,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.tokenizer,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; mm_registry)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self.model_executor = &lt;b&gt;executor_class&lt;/b&gt;(vllm_config=vllm_config)" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="200" y="390" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-14" target="sT55y12rGX_XL4kx0Qpv-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-14" value="executor_base.py-&amp;gt;__init__()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self._init_executor()" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="540" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="sT55y12rGX_XL4kx0Qpv-16" target="sT55y12rGX_XL4kx0Qpv-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-16" value="mp_distributed_executor.py-&amp;gt;self._init_executor()&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self._run_workers(&quot;init_worker&quot;, all_kwargs)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self._run_workers(&quot;init_device&quot;)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; self._run_workers(&quot;load_model&quot;,&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="610" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-18" value="worker.py-&gt;__init__()&#xa;        self._run_workers(&quot;init_worker&quot;, all_kwargs)&#xa;        self._run_workers(&quot;init_device&quot;)&#xa;        self._run_workers(&quot;load_model&quot;,&#xa;        self.model_runner: GPUModelRunnerBase = ModelRunnerClass(&#xa;            vllm_config=self.vllm_config,&#xa;            kv_cache_dtype=self.cache_config.cache_dtype,&#xa;            is_driver_worker=is_driver_worker,&#xa;            **speculative_args,&#xa;        )&#xa;        # initialize_cache.&#xa;        self.cache_engine: List[CacheEngine]&#xa;        # Initialize gpu_cache as pooling models don&#39;t initialize kv_caches&#xa;        self.gpu_cache: Optional[List[List[torch.Tensor]]] = None" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="200" y="720" width="400" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sT55y12rGX_XL4kx0Qpv-22" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; A[用户创建LLM实例] --&amp;gt; B[调用LLMEngine.from_engine_args]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; B --&amp;gt; C{检查envs.VLLM_USE_V1}&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; C --&amp;gt;|True 默认| D[导入V1LLMEngine]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; C --&amp;gt;|False| E[使用V0LLMEngine]&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="240" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
