@@ -127,6 +127,9 @@
         <mxCell id="FvFLSkKqpKLTtvr1RCym-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FvFLSkKqpKLTtvr1RCym-14" target="FvFLSkKqpKLTtvr1RCym-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="FvFLSkKqpKLTtvr1RCym-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="FvFLSkKqpKLTtvr1RCym-14" target="FvFLSkKqpKLTtvr1RCym-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="FvFLSkKqpKLTtvr1RCym-14" value="Worker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1430" y="610" width="120" height="60" as="geometry" />
         </mxCell>
@@ -144,6 +147,9 @@
         </mxCell>
         <mxCell id="FvFLSkKqpKLTtvr1RCym-21" value="Model Runer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1610" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FvFLSkKqpKLTtvr1RCym-23" value="每个Worker都对应一个GPU" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="610" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
