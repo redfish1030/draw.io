@@ -148,8 +148,8 @@
         <mxCell id="FvFLSkKqpKLTtvr1RCym-21" value="Model Runer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1610" y="700" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FvFLSkKqpKLTtvr1RCym-23" value="每个Worker都对应一个GPU。&lt;div&gt;全局GPU总数放在world_size当中，没个worker有个rank值作为自己的标识，rank 0作为并行计算总调度&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1140" y="602.5" width="230" height="75" as="geometry" />
+        <mxCell id="FvFLSkKqpKLTtvr1RCym-23" value="每个Worker都对应一个GPU。&lt;div&gt;全局GPU总数放在world_size当中，没个worker有个rank值作为自己的标识，rank 0作为并行计算总调度&lt;/div&gt;&lt;div&gt;_WOLRD作为全局变量保持&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="591.25" width="230" height="97.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
