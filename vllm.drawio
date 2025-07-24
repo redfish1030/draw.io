@@ -160,8 +160,8 @@
         <mxCell id="FvFLSkKqpKLTtvr1RCym-23" value="每个Worker都对应一个GPU。&lt;div&gt;全局GPU总数放在world_size当中，没个worker有个rank值作为自己的标识，rank 0作为并行计算总调度&lt;/div&gt;&lt;div&gt;_WOLRD作为全局变量保存GPU信息&lt;/div&gt;&lt;div&gt;_TP和_PP保存tp和pp并行的分组信息&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;align=left;" parent="1" vertex="1">
           <mxGeometry x="1120" y="591.25" width="240" height="97.5" as="geometry" />
         </mxCell>
-        <mxCell id="mGCUkn8bLk5gTM7kcdC7-1" value="Model Runder中的execute_model函数调用self.attn_state.begin_forward(model_input)进行推理。attn_state是attend的后端，在vllm中就是flashattention" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="720" width="240" height="70" as="geometry" />
+        <mxCell id="mGCUkn8bLk5gTM7kcdC7-1" value="Model Runder中的execute_model函数调用self.attn_state.begin_forward(model_input)进行推理。attn_state是attend的后端，在vllm中就是flashattention （对于较老的架构，例如T4, 后端为XFORMERS)" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="710" width="240" height="80" as="geometry" />
         </mxCell>
         <mxCell id="mGCUkn8bLk5gTM7kcdC7-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mGCUkn8bLk5gTM7kcdC7-3" target="mGCUkn8bLk5gTM7kcdC7-7">
           <mxGeometry relative="1" as="geometry" />
